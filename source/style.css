@@ -16,7 +16,8 @@ h3 {
 }
 
 h1 {
-  font-size: 78px;
+  font-size: 96px;
+  padding-top: 30px;
 }
 
 h2 {
@@ -82,15 +83,6 @@ p {
   display: block;
 }
 
-.about-paragraphs {
-  display: flex;
-  margin: 30px 0;
-}
-
-.about-paragraphs p {
-  margin: 10px;
-}
-
 .email-link {
   display: flex;
   justify-content: center;
@@ -101,4 +93,33 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 52px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .project {
+    text-align: center;
+  }
+  .project-name {
+    text-align: center;
+  }
+  .project-picture {
+    display: none;
+  }
+  .app-link {
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+  }
+  .email-link {
+    font-size: 20px;
+  }
 }
